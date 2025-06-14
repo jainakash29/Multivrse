@@ -18826,18 +18826,19 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 
 .wave-container {
-    height: 100px;
-    /* margin-top: 35px; */
-    position: relative;
-    background-color: #f5f6fa;
-    overflow: hidden; /* prevents overflow from svg */
+	height: 100px;
+	/* margin-top: 35px; */
+	position: relative;
+	background-color: #f5f6fa;
+	overflow: hidden;
+	/* prevents overflow from svg */
 }
 
 .wave {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* height: 100%; this ensures it fits the container height */
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* height: 100%; this ensures it fits the container height */
 }
 
 
@@ -18866,3 +18867,24 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .UL-Li-Strong li {
 	margin-bottom: 20px;
 }
+
+
+/* .preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100vw;
+	height: 100vh;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+.preloader.loaded {
+	opacity: 0;
+	visibility: hidden;
+} */
