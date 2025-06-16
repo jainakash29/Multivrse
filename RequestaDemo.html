@@ -178,7 +178,7 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About Us</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About us</a>
                     </li>
                     <li class="rd-nav-item active"><a class="rd-nav-link" href="#">Resources</a>
                       <ul class="rd-menu rd-navbar-dropdown">
@@ -295,7 +295,7 @@
           <div class="col-lg-8 col-xl-6">
             <div class="heading-decorate-wrap">
               <h3 class="heading-decorate"><span class="heading-decorate-symbol fw-ubold">D</span><span
-                  class="heading-decorate-main">Request a Demo</span></h3>
+                  class="heading-decorate-main">Request a demo</span></h3>
               <!-- RD Mailform-->
               <!-- RD Mailform-->
               <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="demo"
@@ -326,7 +326,7 @@
                     <div class="form-wrap wow fadeSlideInUp">
                       <label class="form-label-outside" for="demo-country">Country</label>
                       <select class="form-input" id="demo-country" name="country">
-                        <option value=""></option>
+                        <option value="">-- Select value --</option>
                       </select>
                     </div>
                   </div>
@@ -370,7 +370,7 @@
                 <div class="col-6 col-sm-6">
                   <ul class="list list-xs">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="about-us.html">About us</a></li>
                     <li><a href="Blog.html">Blog</a></li>
                     <li><a href="contacts.html">Contacts</a></li>
                   </ul>
@@ -473,6 +473,28 @@
   <!-- Javascript-->
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    $(document).ready(function () {
+      const countrySelect = $('#demo-country');
+      // country api call
+      fetch("https://staging.multivrse.digital/api/usermgmt/countries")
+        .then(response => response.json())
+        .then(data => {
+          const sortedCountries = data.sort((a, b) => a.name.localeCompare(b.name));
+
+          sortedCountries.forEach(country => {
+            const option = $('<option>', {
+              value: country.name,
+              text: country.name,
+            });
+            countrySelect.append(option);
+          });
+        })
+        .catch(error => {
+          console.error("Error loading countries:", error);
+        });
+    });
+  </script>
 </body>
 
 </html>

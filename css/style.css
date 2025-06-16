@@ -302,7 +302,7 @@ h3,
 	letter-spacing: 0;
 	color: #29293a;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 }
 
 @media (min-width: 768px) {
@@ -382,7 +382,7 @@ h6,
 	line-height: 1.8;
 	letter-spacing: .2em;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	color: #aeb1be;
 }
 
@@ -487,7 +487,7 @@ code {
 	letter-spacing: 0;
 	line-height: 1.2;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 }
 
 @media (min-width: 576px) {
@@ -514,7 +514,7 @@ code {
 	letter-spacing: 0;
 	line-height: 1.2;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 }
 
 @media (min-width: 576px) {
@@ -1887,7 +1887,7 @@ html .list-inline-md>* {
 	font-size: .875em;
 	letter-spacing: .08em;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	color: #29293a;
 }
 
@@ -2308,7 +2308,7 @@ img {
 .table-info-title {
 	font-weight: 700;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	line-height: 1.2;
 }
 
@@ -2503,7 +2503,7 @@ hr {
 	font-weight: 700;
 	letter-spacing: 0.05em;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	text-align: center;
@@ -2526,7 +2526,7 @@ hr {
 	font-weight: 700;
 	letter-spacing: 0.05em;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	text-align: center;
@@ -2853,7 +2853,7 @@ html .button.button-icon {
 	font-weight: 700;
 	letter-spacing: .05em;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	transition: .33s;
 }
 
@@ -5628,7 +5628,7 @@ html:not(.tablet):not(.mobile) .thumbnail-indigo:hover .thumbnail-indigo-caption
 	font-weight: 900;
 	letter-spacing: 0;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 }
 
 .heading-decorate-symbol {
@@ -5840,7 +5840,7 @@ html:not(.tablet):not(.mobile) .thumbnail-indigo:hover .thumbnail-indigo-caption
 	display: inline-block;
 	float: right;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 }
 
 .snackbars-right:hover {
@@ -7529,7 +7529,7 @@ html:not(.tablet):not(.mobile) .profile-minimal-caption {
 	font-weight: 300;
 	letter-spacing: 0;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 }
 
 .thumbnail-classic-item-subtitle {
@@ -10383,7 +10383,7 @@ html.tablet .ui-to-top {
 	font: 600 14px/20px "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	letter-spacing: .08em;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 }
 
 .rd-navbar-toggle {
@@ -14102,7 +14102,7 @@ button.swiper-pagination-bullet {
 	letter-spacing: .08em;
 	line-height: 30px;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	color: #29293a;
 }
 
@@ -14162,7 +14162,7 @@ button.swiper-pagination-bullet {
 	font-weight: 700;
 	letter-spacing: 0.05em;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	text-align: center;
 	color: #fff;
 	background: #fa9046;
@@ -14259,7 +14259,7 @@ button.swiper-pagination-bullet {
 	line-height: 1.7;
 	letter-spacing: .1em;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	color: #000;
 }
 
@@ -14817,7 +14817,7 @@ button.swiper-pagination-bullet {
 .tabs-corporate .nav-link {
 	padding: 10px 10px;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 	font-size: 12px;
 	font-weight: 700;
 	line-height: 1.4;
@@ -15336,7 +15336,7 @@ button.swiper-pagination-bullet {
 	margin-right: -5px;
 	font-weight: 700;
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 }
 
 .progress-linear .progress-header>* {
@@ -18788,7 +18788,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .countdown-title:first-letter {
 	/* text-transform: uppercase; */
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 }
 
 *+.countdown {
@@ -18878,7 +18878,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .privacy-Email:hover {
-	color: #002774;
+	color: #002774 !important;
 }
 
 .select2-container--default .select2-selection--multiple {
