@@ -295,45 +295,46 @@
           <div class="col-lg-8 col-xl-6">
             <div class="heading-decorate-wrap">
               <h3 class="heading-decorate"><span class="heading-decorate-symbol fw-ubold">D</span><span
-                  class="heading-decorate-main">Demo - Minimal Form</span></h3>
+                  class="heading-decorate-main">Request a Demo</span></h3>
               <!-- RD Mailform-->
               <!-- RD Mailform-->
-              <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact"
+              <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="demo"
                 method="post" action="bat/rd-mailform.php">
                 <div class="row row-10">
                   <div class="col-md-6 wow-outer">
                     <div class="form-wrap wow fadeSlideInUp">
-                      <label class="form-label-outside" for="contact-first-name">First Name</label>
-                      <input class="form-input" id="contact-first-name" type="text" name="name"
+                      <label class="form-label-outside" for="demo-full-name">Full Name</label>
+                      <input class="form-input" id="demo-full-name" type="text" name="name"
                         data-constraints="@Required">
                     </div>
                   </div>
                   <div class="col-md-6 wow-outer">
                     <div class="form-wrap wow fadeSlideInUp">
-                      <label class="form-label-outside" for="contact-last-name">Last Name</label>
-                      <input class="form-input" id="contact-last-name" type="text" name="name"
-                        data-constraints="@Required">
-                    </div>
-                  </div>
-                  <div class="col-md-6 wow-outer">
-                    <div class="form-wrap wow fadeSlideInUp">
-                      <label class="form-label-outside" for="contact-email">E-mail</label>
-                      <input class="form-input" id="contact-email" type="email" name="email"
+                      <label class="form-label-outside" for="demo-user-email">Work Email</label>
+                      <input class="form-input" id="demo-user-email" type="email" name="email"
                         data-constraints="@Email @Required">
                     </div>
                   </div>
                   <div class="col-md-6 wow-outer">
                     <div class="form-wrap wow fadeSlideInUp">
-                      <label class="form-label-outside" for="contact-phone">Phone</label>
-                      <input class="form-input" id="contact-phone" type="text" name="phone"
-                        data-constraints="@PhoneNumber @Required">
+                      <label class="form-label-outside" for="demo-company-name">Company Name</label>
+                      <input class="form-input" id="demo-company-name" type="text" name="cname"
+                        data-constraints="@Required">
+                    </div>
+                  </div>
+                  <div class="col-md-6 wow-outer">
+                    <div class="form-wrap wow fadeSlideInUp">
+                      <label class="form-label-outside" for="demo-country">Country</label>
+                      <select class="form-input" id="demo-country" name="country">
+                        <option value=""></option>
+                      </select>
                     </div>
                   </div>
                   <div class="col-12 wow-outer">
                     <div class="form-wrap wow fadeSlideInUp">
-                      <label class="form-label-outside" for="contact-message">Your Message</label>
-                      <textarea class="form-input" id="contact-message" name="message"
-                        data-constraints="@Required"></textarea>
+                      <label class="form-label-outside" for="demo-message">Message / What would you like to see in the
+                        demo?</label>
+                      <textarea class="form-input" id="demo-message" name="message"></textarea>
                     </div>
                   </div>
                 </div>
@@ -347,8 +348,7 @@
             </div>
           </div>
           <div class="col-lg-8 col-xl-6 section-buba-col">
-            <div class="section-buba-image"><img src="images/contact-big-1-874x742.jpg" alt="" width="874"
-                height="742" />
+            <div class="section-buba-image"><img src="images/FormSideImage.jpg" alt="" width="874" height="742" />
             </div>
           </div>
         </div>

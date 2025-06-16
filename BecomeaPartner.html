@@ -272,7 +272,7 @@
       </div>
     </header>
     <!-- Breadcrumbs -->
-    <section class="breadcrumbs-custom bg-image context-dark" style="background-image: url(images/RequestaDemo.jpg);">
+    <section class="breadcrumbs-custom bg-image context-dark" style="background-image: url(images/Contact-Banner.jpg);">
       <div class="breadcrumbs-custom-inner">
         <div class="container breadcrumbs-custom-container">
           <div class="breadcrumbs-custom-main">
@@ -295,45 +295,50 @@
           <div class="col-lg-8 col-xl-6">
             <div class="heading-decorate-wrap">
               <h3 class="heading-decorate"><span class="heading-decorate-symbol fw-ubold">P</span><span
-                  class="heading-decorate-main">Partner - Minimal Form</span></h3>
+                  class="heading-decorate-main">Become a Partner</span></h3>
               <!-- RD Mailform-->
               <!-- RD Mailform-->
-              <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact"
+              <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="partner"
                 method="post" action="bat/rd-mailform.php">
                 <div class="row row-10">
                   <div class="col-md-6 wow-outer">
                     <div class="form-wrap wow fadeSlideInUp">
-                      <label class="form-label-outside" for="contact-first-name">First Name</label>
-                      <input class="form-input" id="contact-first-name" type="text" name="name"
+                      <label class="form-label-outside" for="partner-full-name">Full Name</label>
+                      <input class="form-input" id="partner-full-name" type="text" name="name"
                         data-constraints="@Required">
                     </div>
                   </div>
                   <div class="col-md-6 wow-outer">
                     <div class="form-wrap wow fadeSlideInUp">
-                      <label class="form-label-outside" for="contact-last-name">Last Name</label>
-                      <input class="form-input" id="contact-last-name" type="text" name="name"
-                        data-constraints="@Required">
-                    </div>
-                  </div>
-                  <div class="col-md-6 wow-outer">
-                    <div class="form-wrap wow fadeSlideInUp">
-                      <label class="form-label-outside" for="contact-email">E-mail</label>
-                      <input class="form-input" id="contact-email" type="email" name="email"
+                      <label class="form-label-outside" for="partner-user-email">Work Email</label>
+                      <input class="form-input" id="partner-user-email" type="email" name="email"
                         data-constraints="@Email @Required">
                     </div>
                   </div>
                   <div class="col-md-6 wow-outer">
                     <div class="form-wrap wow fadeSlideInUp">
-                      <label class="form-label-outside" for="contact-phone">Phone</label>
-                      <input class="form-input" id="contact-phone" type="text" name="phone"
-                        data-constraints="@PhoneNumber @Required">
+                      <label class="form-label-outside" for="partner-company-name">Company Name</label>
+                      <input class="form-input" id="partner-company-name" type="text" name="cname"
+                        data-constraints="@Required">
+                    </div>
+                  </div>
+                  <div class="col-md-6 wow-outer">
+                    <div class="form-wrap wow fadeSlideInUp">
+                      <label class="form-label-outside" for="partner-partnership-type">Type of Partnership</label>
+                      <select class="form-input" id="partner-partnership-type" name="partnershipType">
+                        <option value=""></option>
+                        <option value="Referral">Referral</option>
+                        <option value="Reseller">Reseller</option>
+                        <option value="Tech Integration">Tech Integration</option>
+                        <option value="Other">Other</option>
+                      </select>
                     </div>
                   </div>
                   <div class="col-12 wow-outer">
                     <div class="form-wrap wow fadeSlideInUp">
-                      <label class="form-label-outside" for="contact-message">Your Message</label>
-                      <textarea class="form-input" id="contact-message" name="message"
-                        data-constraints="@Required"></textarea>
+                      <label class="form-label-outside" for="partner-message">Message / Why are you interested in
+                        partnering?</label>
+                      <textarea class="form-input" id="partner-message" name="message"></textarea>
                     </div>
                   </div>
                 </div>
@@ -347,8 +352,7 @@
             </div>
           </div>
           <div class="col-lg-8 col-xl-6 section-buba-col">
-            <div class="section-buba-image"><img src="images/contact-big-1-874x742.jpg" alt="" width="874"
-                height="742" />
+            <div class="section-buba-image"><img src="images/FormSideImage.jpg" alt="" width="874" height="742" />
             </div>
           </div>
         </div>

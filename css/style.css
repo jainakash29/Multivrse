@@ -3058,7 +3058,8 @@ textarea.form-input {
 
 .form-label-outside {
 	width: 100%;
-	padding-right: 150px;
+	/* padding-right: 150px; */
+	padding-right: 0px;
 	margin-bottom: 4px;
 	font-size: 14px;
 	color: #aeb1be;
@@ -18868,6 +18869,34 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	margin-bottom: 20px;
 }
 
+.privacy-Ul-Li li {
+	text-indent: 10px;
+}
+
+.privacy-Email {
+	color: #2469d0;
+}
+
+.privacy-Email:hover {
+	color: #002774;
+}
+
+.select2-container--default .select2-selection--multiple {
+	display: block !important;
+	width: 100%;
+	min-height: 48px !important;
+	padding: 11px 19px !important;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #29293a;
+	background-color: #fff;
+	background-image: none;
+	border-radius: 9px !important;
+	-webkit-appearance: none;
+	transition: .3s ease-in-out;
+	border: 1px solid #c5c6cd !important;
+}
 
 /* .preloader {
 	position: fixed;

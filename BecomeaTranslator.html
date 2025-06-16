@@ -16,6 +16,11 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css" id="main-styles-link">
+  <!--Select2 CSS & JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Select2 CSS & JS -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </head>
 
 <body>
@@ -271,7 +276,8 @@
       </div>
     </header>
     <!-- Breadcrumbs -->
-    <section class="breadcrumbs-custom bg-image context-dark" style="background-image: url(images/RequestaDemo.jpg);">
+    <section class="breadcrumbs-custom bg-image context-dark"
+      style="background-image: url(images/BecomeTranslator.jpg);">
       <div class="breadcrumbs-custom-inner">
         <div class="container breadcrumbs-custom-container">
           <div class="breadcrumbs-custom-main">
@@ -294,45 +300,87 @@
           <div class="col-lg-8 col-xl-6">
             <div class="heading-decorate-wrap">
               <h3 class="heading-decorate"><span class="heading-decorate-symbol fw-ubold">T</span><span
-                  class="heading-decorate-main">Translator - Minimal Form</span></h3>
+                  class="heading-decorate-main">Become a Translator</span></h3>
               <!-- RD Mailform-->
               <!-- RD Mailform-->
-              <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact"
+              <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="translator"
                 method="post" action="bat/rd-mailform.php">
                 <div class="row row-10">
                   <div class="col-md-6 wow-outer">
                     <div class="form-wrap wow fadeSlideInUp">
-                      <label class="form-label-outside" for="contact-first-name">First Name</label>
-                      <input class="form-input" id="contact-first-name" type="text" name="name"
+                      <label class="form-label-outside" for="translator-full-name">Full Name</label>
+                      <input class="form-input" id="translator-full-name" type="text" name="name"
                         data-constraints="@Required">
                     </div>
                   </div>
                   <div class="col-md-6 wow-outer">
                     <div class="form-wrap wow fadeSlideInUp">
-                      <label class="form-label-outside" for="contact-last-name">Last Name</label>
-                      <input class="form-input" id="contact-last-name" type="text" name="name"
-                        data-constraints="@Required">
-                    </div>
-                  </div>
-                  <div class="col-md-6 wow-outer">
-                    <div class="form-wrap wow fadeSlideInUp">
-                      <label class="form-label-outside" for="contact-email">E-mail</label>
-                      <input class="form-input" id="contact-email" type="email" name="email"
+                      <label class="form-label-outside" for="translator-user-email">Email Address</label>
+                      <input class="form-input" id="translator-user-email" type="email" name="email"
                         data-constraints="@Email @Required">
                     </div>
                   </div>
                   <div class="col-md-6 wow-outer">
                     <div class="form-wrap wow fadeSlideInUp">
-                      <label class="form-label-outside" for="contact-phone">Phone</label>
-                      <input class="form-input" id="contact-phone" type="text" name="phone"
-                        data-constraints="@PhoneNumber @Required">
+                      <label class="form-label-outside" for="translator-languages">Native Language(s)</label>
+                      <!-- <select class="form-input" id="translator-languages" type="text" name="languages[]" multiple
+                        data-constraints="@Required">
+                        <option value="">-- Select an option --</option>
+                      </select> -->
+                      <input class="form-input" id="translator-languages" type="text" name="nativeLanguages"
+                        placeholder="e.g., English,French,German,Japanese" data-constraints="@Required">
+                    </div>
+                  </div>
+                  <div class="col-md-6 wow-outer">
+                    <div class="form-wrap wow fadeSlideInUp">
+                      <label class="form-label-outside" for="translator-languages">Language Pairs You Translate</label>
+                      <!-- <select class="form-input" id="translator-languages" type="text" name="translateLanguages[]" multiple
+                        data-constraints="@Required">
+                        <option value="">-- Select an option --</option>
+                      </select> -->
+                      <input class="form-input" id="translator-translateLanguages" type="text" name="translateLanguages"
+                        placeholder="e.g., English → French, German → Japanese" data-constraints="@Required">
+                    </div>
+                  </div>
+                  <div class="col-md-6 wow-outer">
+                    <div class="form-wrap wow fadeSlideInUp">
+                      <label class="form-label-outside" for="translator-experience">Years of Translation
+                        Experience</label>
+                      <select class="form-input" id="translator-experience" name="experience">
+                        <option value=""></option>
+                        <option value="<1">&lt;1</option>
+                        <option value="1-3">1-3</option>
+                        <option value="4-6">4-6</option>
+                        <option value="7+">7+</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6 wow-outer">
+                    <div class="form-wrap wow fadeSlideInUp">
+                      <label class="form-label-outside" for="translator-Specialisation">Specialisation</label>
+                      <select class="form-input" id="translator-Specialisation" name="Specialisation[]" multiple>
+                        <option value="Legal">Legal</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Technical">Technical</option>
+                        <option value="eCommerce">eCommerce</option>
+                        <option value="Aviation">Aviation</option>
+                        <option value="Retail">Retail</option>
+                        <option value="Manufacturing">Manufacturing</option>
+                        <option value="Tourism">Tourism</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Automotive">Automotive</option>
+                        <option value="Education">Education</option>
+                        <option value="Advertising and Brand">Advertising and Brand</option>
+                        <option value="etc">etc</option>
+                      </select>
                     </div>
                   </div>
                   <div class="col-12 wow-outer">
                     <div class="form-wrap wow fadeSlideInUp">
-                      <label class="form-label-outside" for="contact-message">Your Message</label>
-                      <textarea class="form-input" id="contact-message" name="message"
-                        data-constraints="@Required"></textarea>
+                      <label class="form-label-outside" for="translator-cv-upload">Upload Your CV</label>
+                      <input class="form-input" id="translator-cv-upload" type="file" name="cv"
+                        accept=".pdf,.doc,.docx">
                     </div>
                   </div>
                 </div>
@@ -346,8 +394,7 @@
             </div>
           </div>
           <div class="col-lg-8 col-xl-6 section-buba-col">
-            <div class="section-buba-image"><img src="images/contact-big-1-874x742.jpg" alt="" width="874"
-                height="742" />
+            <div class="section-buba-image"><img src="images/FormSideImage.jpg" alt="" width="874" height="742" />
             </div>
           </div>
         </div>
@@ -472,6 +519,14 @@
   <!-- Javascript-->
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#translator-Specialisation').select2({
+        // placeholder: "Specialisation",
+        allowClear: false
+      });
+    });
+  </script>
 </body>
 
 </html>
