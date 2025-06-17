@@ -9112,18 +9112,25 @@ html [class*='section-'].section-bottom-0 {
 	}
 
 	.section-buba-image {
+		/* jain */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/* jain */
 		position: absolute;
 		top: 0;
-		left: calc(50% + 100px);
+		left: calc(50% + 50px);
 		right: 0;
 		bottom: 0;
 	}
 
 	.section-buba img {
 		width: 100%;
-		height: 100%;
+		/* jain */
+		/* height: 100%;
 		object-fit: cover;
-		object-position: 0% center;
+		object-position: 0% center; */
+		/* jain */
 	}
 }
 
@@ -18917,3 +18924,67 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	opacity: 0;
 	visibility: hidden;
 } */
+
+
+.ssolutions-heading {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 40px;
+}
+
+.ssheading-symbol {
+	color: rgba(255, 255, 255, 0.3);
+	font-size: 3rem;
+	position: relative;
+	top: 5px;
+}
+
+*+.scard-grid {
+	margin-top: 35px;
+}
+
+.scard-grid {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.ssolution-card {
+	border: 4px solid #a3a3a3;
+	background: #fff;
+	border-radius: 15%;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	padding: 30px 20px;
+	text-align: center;
+	transition: transform 0.3s ease;
+}
+
+/* .ssolution-card:hover {
+	transform: translateY(-5px);
+} */
+
+.scard-icon {
+	font-size: 2.5rem !important;
+	color: #000000 !important;
+	margin-bottom: 15px !important;
+}
+
+.scard-title {
+	font-size: 1.1rem !important;
+	font-weight: 600 !important;
+	margin-bottom: 15px !important;
+	color: #000000 !important;
+}
+
+.scard-list a {
+	color: #333;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+
+.scard-list {
+	color: #000000 !important;
+	font-size: 16px;
+}
